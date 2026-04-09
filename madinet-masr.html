@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدينة مصر للإسكان والتعمير | سراي - تالالا - بترفلاي | خصم حتى 50%</title>
+<meta name="description" content="مدينة مصر للإسكان والتعمير - شركة عقارية رائدة منذ 1959. اكتشف مشاريع سراي القاهرة الجديدة، تالا هليوبوليس، بترفلاي مدينة نصر. فيلا بسعر شقة وخصم يصل إلى 50% على جميع الوحدات. تواصل معنا الآن.">
+<meta name="keywords" content="مدينة مصر, عقارات مصر, سراي القاهرة الجديدة, تالا هليوبوليس, بترفلاي مدينة نصر, شراء فيلا, شقق للبيع, كمبوند, خصم 50%, فيلا بسعر شقة, مدينة مصر للإسكان, عقارات القاهرة, وحدات سكنية, استثمار عقاري">
+<meta property="og:title" content="مدينة مصر | فيلا بسعر شقة + خصم 50%">
+<meta property="og:description" content="اكتشف مشاريع مدينة مصر العقارية المتميزة. فيلا بسعر شقة وخصم يصل إلى 50% على جميع الوحدات.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#D81E2C;
+  --red-dark:#9B0E1A;
+  --red-light:#FF2D3D;
+  --black:#0A0A0A;
+  --dark:#111111;
+  --dark2:#161616;
+  --dark3:#1E1E1E;
+  --dark4:#252525;
+  --border:#2C2C2C;
+  --border2:#3A3A3A;
+  --gray:#777;
+  --gray-light:#AAA;
+  --white:#F8F6F2;
+  --off-white:#EDE9E3;
+  --sans:'Cairo',sans-serif;
+  --body:'Tajawal',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--black);color:var(--white);overflow-x:hidden;direction:rtl;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--black)}
+::-webkit-scrollbar-thumb{background:var(--red);border-radius:2px}
+
+/* FLOATING BUTTONS */
+.float-btns{position:fixed;left:1.5rem;bottom:2rem;z-index:999;display:flex;flex-direction:column;gap:12px;align-items:center}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:0 4px 20px rgba(0,0,0,.5);animation:shake 2.5s ease-in-out infinite;text-decoration:none}
+.float-btn.phone{background:var(--red)}
+.float-btn.wa{background:#25D366}
+.float-btn svg{width:26px;height:26px;fill:#fff}
+@keyframes shake{
+  0%,60%,100%{transform:rotate(0deg) scale(1)}
+  65%{transform:rotate(-10deg) scale(1.1)}
+  70%{transform:rotate(10deg) scale(1.1)}
+  75%{transform:rotate(-8deg) scale(1.05)}
+  80%{transform:rotate(8deg) scale(1.05)}
+  85%{transform:rotate(0deg) scale(1)}
+}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
+nav.scrolled{background:rgba(10,10,10,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.9rem 4rem}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo img{height:52px;width:auto}
+.nav-logo-text{font-family:var(--sans);font-size:1.1rem;font-weight:900;color:var(--white);display:none}
+.nav-logo-text span{color:var(--red)}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-family:var(--sans);font-size:.9rem;font-weight:500;color:rgba(248,246,242,.75);transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:1.5px;background:var(--red);transition:width .3s}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{font-family:var(--sans);background:var(--red);color:#fff;padding:.6rem 1.5rem;border-radius:4px;font-size:.9rem;font-weight:600;transition:all .3s;border:none;cursor:pointer}
+.nav-cta:hover{background:var(--red-light);transform:translateY(-1px)}
+@media(max-width:768px){nav{padding:1rem 1.5rem}nav.scrolled{padding:.8rem 1.5rem}.nav-links{display:none}}
+
+/* HERO */
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;animation:heroZoom 14s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+.hero-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(135deg,#1a0508 0%,#2d0a0f 30%,#111 60%,#0a0a0a 100%)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D81E2C' fill-opacity='0.03'%3E%3Cpath d='M40 0L0 40l40 40 40-40z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,10,.25) 0%,rgba(10,10,10,.4) 50%,rgba(10,10,10,.88) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 2rem;max-width:900px;animation:fadeUp .9s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-size:.85rem;font-weight:700;padding:.4rem 1.2rem;border-radius:2px;margin-bottom:1.5rem;letter-spacing:.5px}
+.hero h1{font-family:var(--sans);font-size:clamp(2.2rem,5vw,4rem);font-weight:900;line-height:1.25;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);color:rgba(248,246,242,.85);margin-bottom:2rem;font-weight:300;max-width:650px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{font-family:var(--sans);background:var(--red);color:#fff;padding:.85rem 2.2rem;border-radius:4px;font-size:1rem;font-weight:700;border:none;cursor:pointer;transition:all .3s;display:inline-block}
+.btn-primary:hover{background:var(--red-light);transform:translateY(-2px);box-shadow:0 8px 25px rgba(216,30,44,.4)}
+.btn-outline{font-family:var(--sans);background:transparent;color:#fff;padding:.85rem 2.2rem;border-radius:4px;font-size:1rem;font-weight:600;border:1.5px solid rgba(255,255,255,.5);cursor:pointer;transition:all .3s;display:inline-block}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;animation:bounce 2s ease-in-out infinite}
+.hero-scroll span{font-size:.75rem;color:rgba(255,255,255,.5);font-family:var(--sans);letter-spacing:1px}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,.5),transparent)}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
+.video-sound-btn{position:absolute;bottom:5rem;left:2rem;z-index:2;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--sans);font-size:.8rem;padding:.4rem .9rem;border-radius:20px;cursor:pointer;transition:all .3s;backdrop-filter:blur(4px)}
+.video-sound-btn:hover{background:rgba(216,30,44,.5);border-color:var(--red)}
+
+/* SECTION BASE */
+section{padding:5rem 0}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem}
+.section-label{display:inline-block;font-family:var(--sans);font-size:.8rem;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:.75rem;padding:.3rem .8rem;border:1px solid rgba(216,30,44,.3);border-radius:2px}
+.section-title{font-family:var(--sans);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-height:1.3;margin-bottom:1rem}
+.section-title span{color:var(--red)}
+.section-sub{font-size:1.05rem;color:var(--gray-light);max-width:600px;font-weight:300;line-height:1.8}
+.divider{width:50px;height:3px;background:var(--red);margin:1.5rem 0;border-radius:2px}
+.divider.center{margin:1.5rem auto}
+.text-center{text-align:center}
+.text-center .section-sub{margin:0 auto}
+
+/* ABOUT */
+.about{background:var(--dark2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+.stat-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:1.5rem;position:relative;overflow:hidden;transition:border-color .3s}
+.stat-card::before{content:'';position:absolute;top:0;right:0;width:3px;height:100%;background:var(--red)}
+.stat-card:hover{border-color:var(--red)}
+.stat-num{font-family:var(--sans);font-size:2.2rem;font-weight:900;color:var(--red);line-height:1}
+.stat-label{font-size:.9rem;color:var(--gray-light);margin-top:.4rem;font-weight:400}
+.about-visual{position:relative}
+.about-img-placeholder{width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,var(--dark3),var(--dark4));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:5rem;border:1px solid var(--border);position:relative}
+.about-badge{position:absolute;bottom:-1.5rem;left:-1.5rem;background:var(--red);color:#fff;padding:1.2rem 1.5rem;border-radius:8px;font-family:var(--sans)}
+.about-badge strong{display:block;font-size:1.6rem;font-weight:900;line-height:1}
+.about-badge span{font-size:.8rem;opacity:.85}
+.about-features{margin-top:2rem;display:flex;flex-direction:column;gap:.75rem}
+.about-feature{display:flex;align-items:flex-start;gap:.75rem;font-size:.95rem;color:var(--gray-light)}
+.about-feature-icon{color:var(--red);font-weight:900;flex-shrink:0;margin-top:2px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-visual{display:none}}
+
+/* DISCOUNT BANNER */
+.discount-banner{background:linear-gradient(135deg,var(--red-dark),var(--red));padding:3rem 0;text-align:center;position:relative;overflow:hidden}
+.discount-banner::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(255,255,255,.03) 30px,rgba(255,255,255,.03) 60px)}
+.discount-num{font-family:var(--sans);font-size:clamp(3rem,8vw,6rem);font-weight:900;color:#fff;line-height:1;text-shadow:0 4px 30px rgba(0,0,0,.3)}
+.discount-text{font-family:var(--sans);font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:700;color:rgba(255,255,255,.9);margin-top:.5rem}
+.discount-sub{font-size:1rem;color:rgba(255,255,255,.75);margin-top:.5rem;font-weight:300}
+.btn-white{background:#fff;color:var(--red);font-family:var(--sans);font-weight:800;padding:.9rem 2.5rem;border-radius:4px;border:none;cursor:pointer;font-size:1rem;display:inline-block;transition:all .3s;margin-top:1.5rem}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
+
+/* VILLA HIGHLIGHT */
+.villa-section{background:var(--black);padding:5rem 0}
+.villa-inner{background:linear-gradient(135deg,var(--dark2),var(--dark3));border:1px solid var(--border);border-radius:12px;padding:3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;overflow:hidden}
+.villa-inner::before{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--red),transparent)}
+.villa-tag{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-size:.75rem;font-weight:800;padding:.35rem 1rem;border-radius:2px;letter-spacing:1px;margin-bottom:1rem}
+.villa-inner h2{font-family:var(--sans);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;line-height:1.3;margin-bottom:1rem}
+.villa-inner h2 span{color:var(--red)}
+.villa-inner p{color:var(--gray-light);font-size:1rem;line-height:1.8;margin-bottom:1.5rem}
+.villa-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem}
+.villa-feat{display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:var(--off-white)}
+.villa-feat::before{content:'✓';color:var(--red);font-weight:900;font-size:1rem}
+.villa-visual{display:flex;flex-direction:column;gap:1rem}
+.price-compare{background:var(--dark4);border:1px solid var(--border2);border-radius:8px;padding:1.5rem}
+.price-old{font-size:.9rem;color:var(--gray);text-decoration:line-through;font-family:var(--sans)}
+.price-new{font-family:var(--sans);font-size:1.8rem;font-weight:900;color:var(--red);margin-top:.3rem}
+.price-label{font-size:.8rem;color:var(--gray-light);margin-top:.3rem}
+@media(max-width:800px){.villa-inner{grid-template-columns:1fr}}
+
+/* PROJECTS */
+.projects{background:var(--dark2)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem;margin-top:3rem}
+.project-card{background:var(--dark3);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .4s ease;cursor:pointer;position:relative}
+.project-card:hover{transform:translateY(-6px);border-color:var(--red);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.project-img{aspect-ratio:16/10;background:var(--dark4);display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
+.project-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;position:absolute;inset:0}
+.project-card:hover .project-img img{transform:scale(1.08)}
+.project-badge{position:absolute;top:.75rem;right:.75rem;background:var(--red);color:#fff;font-family:var(--sans);font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:2px;z-index:2}
+.project-body{padding:1.5rem}
+.project-body h3{font-family:var(--sans);font-size:1.15rem;font-weight:800;margin-bottom:.4rem}
+.project-location{font-size:.85rem;color:var(--gray-light);display:flex;align-items:center;gap:.3rem;margin-bottom:.8rem}
+.loc-icon{color:var(--red);font-size:.9rem}
+.project-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+.project-tag{font-size:.72rem;padding:.25rem .65rem;border-radius:2px;background:rgba(216,30,44,.12);color:var(--red);font-family:var(--sans);font-weight:600;border:1px solid rgba(216,30,44,.2)}
+.project-cta{width:100%;background:var(--red);color:#fff;font-family:var(--sans);font-size:.9rem;font-weight:700;padding:.7rem;border:none;border-radius:6px;cursor:pointer;transition:all .3s}
+.project-cta:hover{background:var(--red-light)}
+
+/* GALLERY */
+.gallery{background:var(--black);padding:5rem 0}
+.gallery-grid{margin-top:2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.gallery-item{overflow:hidden;border-radius:6px;cursor:pointer;position:relative;background:var(--dark3);aspect-ratio:4/3}
+.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:unset}
+.gallery-item:nth-child(4){grid-column:span 2}
+.gallery-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--dark3),var(--dark4));transition:transform .4s}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s;position:absolute;inset:0}
+.gallery-item:hover .gallery-emoji,.gallery-item:hover img{transform:scale(1.06)}
+.gallery-overlay{position:absolute;inset:0;background:rgba(216,30,44,0);transition:all .4s;display:flex;align-items:center;justify-content:center;z-index:2}
+.gallery-item:hover .gallery-overlay{background:rgba(216,30,44,.15)}
+.gallery-plus{opacity:0;transition:opacity .4s;color:#fff;font-size:2rem;font-weight:300}
+.gallery-item:hover .gallery-plus{opacity:1}
+@media(max-width:600px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item:nth-child(1){grid-column:span 2}}
+
+/* INNOVATIONS */
+.innovations{background:var(--dark2)}
+.innov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.innov-card{background:var(--dark3);border:1px solid var(--border);border-radius:10px;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.innov-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--red),transparent);transform:scaleX(0);transform-origin:right;transition:transform .4s}
+.innov-card:hover{border-color:rgba(216,30,44,.4)}
+.innov-card:hover::after{transform:scaleX(1)}
+.innov-icon{width:48px;height:48px;background:rgba(216,30,44,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.5rem}
+.innov-card h3{font-family:var(--sans);font-size:1.1rem;font-weight:700;margin-bottom:.5rem}
+.innov-card p{font-size:.9rem;color:var(--gray-light);line-height:1.7}
+@media(max-width:800px){.innov-grid{grid-template-columns:1fr}}
+
+/* FORM SECTION */
+.form-section{background:var(--dark2);padding:5rem 0}
+.form-wrapper{max-width:700px;margin:0 auto}
+.form-card{background:var(--dark3);border:1px solid var(--border);border-radius:12px;padding:2.5rem;position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to left,var(--red),var(--red-dark))}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.form-full{grid-column:1/-1}
+.form-group{display:flex;flex-direction:column;gap:.4rem}
+.form-group label{font-family:var(--sans);font-size:.85rem;font-weight:600;color:var(--gray-light)}
+.form-group input,.form-group select{background:var(--dark4);border:1px solid var(--border2);border-radius:6px;padding:.8rem 1rem;color:var(--white);font-family:var(--body);font-size:.95rem;outline:none;transition:border-color .3s;width:100%;-webkit-appearance:none;appearance:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--red)}
+.form-group input::placeholder{color:var(--gray)}
+.form-group select option{background:var(--dark3);color:var(--white)}
+.form-submit{width:100%;background:var(--red);color:#fff;font-family:var(--sans);font-size:1.05rem;font-weight:800;padding:1rem;border:none;border-radius:6px;cursor:pointer;transition:all .3s;margin-top:.5rem}
+.form-submit:hover{background:var(--red-light);transform:translateY(-1px);box-shadow:0 8px 25px rgba(216,30,44,.4)}
+.form-note{text-align:center;font-size:.8rem;color:var(--gray);margin-top:1rem}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--black)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.test-card{background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:1.8rem;transition:border-color .3s}
+.test-card:hover{border-color:rgba(216,30,44,.3)}
+.test-stars{color:var(--red);font-size:1rem;letter-spacing:2px;margin-bottom:.8rem}
+.test-text{font-size:.95rem;color:var(--gray-light);line-height:1.8;margin-bottom:1.2rem;font-style:italic}
+.test-author{display:flex;align-items:center;gap:.8rem}
+.test-avatar{width:40px;height:40px;border-radius:50%;background:rgba(216,30,44,.15);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:.9rem;color:var(--red);flex-shrink:0}
+.test-name{font-family:var(--sans);font-size:.9rem;font-weight:700}
+.test-proj{font-size:.8rem;color:var(--gray);margin-top:.1rem}
+@media(max-width:800px){.test-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{background:var(--dark2)}
+.faq-list{max-width:800px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.75rem}
+.faq-item{background:var(--dark3);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.faq-q{padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:var(--sans);font-size:.98rem;font-weight:600;transition:color .3s;user-select:none}
+.faq-q:hover{color:var(--red)}
+.faq-arrow{font-size:1.2rem;color:var(--gray);transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg);color:var(--red)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-item.open .faq-a{max-height:300px}
+.faq-a-inner{padding:.5rem 1.5rem 1.5rem;font-size:.92rem;color:var(--gray-light);line-height:1.8}
+
+/* CONTACT STRIP */
+.contact-strip{background:var(--dark3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 0}
+.contact-strip-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2rem}
+.contact-item{display:flex;align-items:center;gap:.75rem;font-family:var(--sans)}
+.contact-icon{font-size:1.4rem}
+.contact-item span{font-size:.9rem;color:var(--gray-light)}
+.contact-item strong{font-size:1rem;font-weight:700;direction:ltr;display:block}
+
+/* THANK YOU PAGE */
+#thankyou-page{display:none;position:fixed;inset:0;z-index:9999;background:var(--black);align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:2rem}
+#thankyou-page.active{display:flex}
+.ty-check{width:80px;height:80px;background:linear-gradient(135deg,var(--red-dark),var(--red));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:2.5rem;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(216,30,44,.4)}50%{transform:scale(1.05);box-shadow:0 0 0 15px rgba(216,30,44,0)}}
+.ty-title{font-family:var(--sans);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem}
+.ty-title span{color:var(--red)}
+.ty-text{font-size:1.05rem;color:var(--gray-light);max-width:500px;margin:0 auto 2.5rem;line-height:1.8;font-weight:300}
+.ty-stars{font-size:1.5rem;letter-spacing:4px;margin-bottom:1.5rem;color:var(--red)}
+.ty-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.ty-wa{background:#25D366;color:#fff;font-family:var(--sans);font-weight:700;padding:.9rem 2rem;border-radius:6px;border:none;cursor:pointer;font-size:1rem;display:flex;align-items:center;gap:.5rem;transition:all .3s;text-decoration:none}
+.ty-wa:hover{background:#1da851;transform:translateY(-2px)}
+.ty-back{background:transparent;color:var(--white);font-family:var(--sans);font-weight:600;padding:.9rem 2rem;border-radius:6px;border:1px solid var(--border2);cursor:pointer;font-size:1rem;transition:all .3s}
+.ty-back:hover{border-color:var(--red);color:var(--red)}
+
+/* FOOTER */
+footer{background:var(--dark2);border-top:1px solid var(--border);padding:3rem 0 1.5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-brand img{height:50px;margin-bottom:1rem}
+.footer-brand-name{font-family:var(--sans);font-size:1.3rem;font-weight:900;margin-bottom:1rem;display:none}
+.footer-brand-name span{color:var(--red)}
+.footer-brand p{font-size:.9rem;color:var(--gray);line-height:1.7;font-weight:300}
+.footer-col h4{font-family:var(--sans);font-size:.95rem;font-weight:700;margin-bottom:1.2rem;color:var(--white)}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.footer-col ul li a{font-size:.88rem;color:var(--gray);transition:color .3s}
+.footer-col ul li a:hover{color:var(--red)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-bottom p{font-size:.8rem;color:var(--gray)}
+.social-links{display:flex;gap:.75rem}
+.social-link{width:36px;height:36px;border-radius:50%;background:var(--dark3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:all .3s;cursor:pointer;text-decoration:none;font-size:.9rem}
+.social-link:hover{background:var(--red);border-color:var(--red)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
+
+/* LIGHTBOX */
+#lightbox{display:none;position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.95);align-items:center;justify-content:center}
+#lightbox.active{display:flex}
+#lb-img{max-width:90vw;max-height:90vh;border-radius:8px;object-fit:contain}
+#lb-close{position:absolute;top:1.5rem;left:1.5rem;width:40px;height:40px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;color:#fff;border:none}
+
+/* STICKY CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(10,10,10,.97);backdrop-filter:blur(12px);border-top:1px solid var(--border);padding:.75rem 2rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;z-index:97;transform:translateY(100%);transition:transform .4s ease;flex-wrap:wrap}
+.sticky-cta.visible{transform:translateY(0)}
+.sticky-cta p{font-family:var(--sans);font-size:.9rem;font-weight:600;color:var(--white)}
+.sticky-cta p span{color:var(--red)}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.12s}
+.reveal-delay-2{transition-delay:.22s}
+.reveal-delay-3{transition-delay:.32s}
+</style>
+</head>
+<body>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="tel:01102190220" class="float-btn phone" title="اتصل بنا">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  </a>
+  <a href="https://wa.me/201102190220" target="_blank" class="float-btn wa" title="واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <p>🔥 خصم يصل إلى <span>50%</span> — العرض محدود ومنتهٍ قريباً!</p>
+  <button class="btn-primary" onclick="scrollToForm()" style="padding:.6rem 1.5rem;font-size:.9rem">احجز الآن</button>
+  <a href="https://wa.me/201102190220" target="_blank" style="font-family:var(--sans);padding:.6rem 1.5rem;font-size:.9rem;color:#25D366;border:1.5px solid #25D366;border-radius:4px;font-weight:600;transition:all .3s">واتساب</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">
+    <img src="images/logo.webp" alt="مدينة مصر" onerror="this.style.display='none';document.querySelectorAll('.nav-logo-text').forEach(e=>e.style.display='block')">
+    <span class="nav-logo-text">مدينة <span>مصر</span></span>
+  </div>
+  <div class="nav-links">
+    <a href="#about">عن الشركة</a>
+    <a href="#projects">المشروعات</a>
+    <a href="#gallery">معرض الصور</a>
+    <a href="#innovations">الابتكارات</a>
+    <a href="#contact">تواصل معنا</a>
+  </div>
+  <button class="nav-cta" onclick="scrollToForm()">سجّل اهتمامك</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+    <source src="images/moriarty.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">منذ 1959 — أكثر من 65 عاماً من الريادة في مصر</div>
+    <h1>نُعيد تعريف<br><span>الحياة العصرية</span><br>في مصر</h1>
+    <p>فيلا بسعر شقة — خصم يصل إلى 50% — مشاريع في أرقى المواقع</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollToForm()">🏠 احجز وحدتك الآن</button>
+      <a href="#projects" class="btn-outline">اكتشف المشروعات</a>
+    </div>
+  </div>
+  <button class="video-sound-btn" id="soundBtn" onclick="toggleSound()">🔇 اضغط لتشغيل الصوت</button>
+  <div class="hero-scroll">
+    <span>اكتشف أكثر</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="section-label">من نحن</span>
+        <h2 class="section-title">شركة عقارية رائدة<br>منذ <span>1959</span></h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray-light);line-height:1.9;font-size:1rem;margin-bottom:1.2rem">مدينة مصر للإسكان والتعمير — واحدة من أعرق وأكبر شركات التطوير العقاري في مصر. على مدار أكثر من 65 عاماً، بنينا مجتمعات متكاملة ومشاريع سكنية وتجارية في أرقى المواقع الاستراتيجية على مستوى الجمهورية.</p>
+        <p style="color:var(--gray-light);line-height:1.9;font-size:1rem;margin-bottom:1.5rem">شركة مدرجة في البورصة المصرية وحاصلة على جوائز دولية متعددة. نؤمن بأن كل منزل هو قصة نجاح، ولهذا نقدم أعلى معايير الجودة مع حلول تمويلية مبتكرة تجعل امتلاك وحدتك حلماً حقيقياً.</p>
+        <div class="about-features">
+          <div class="about-feature"><span class="about-feature-icon">✓</span> شركة مدرجة في البورصة المصرية — شفافية تامة ومصداقية عالية</div>
+          <div class="about-feature"><span class="about-feature-icon">✓</span> أكثر من 4 مليون متر مربع مساحات تطوير عبر مصر</div>
+          <div class="about-feature"><span class="about-feature-icon">✓</span> ضمان صيانة حتى 20 عاماً بدون ودائع إضافية (Theqa)</div>
+          <div class="about-feature"><span class="about-feature-icon">✓</span> حائزة على جوائز دولية في التطوير العقاري والابتكار</div>
+          <div class="about-feature"><span class="about-feature-icon">✓</span> فريق مبيعات متخصص على أتم الاستعداد لخدمتك</div>
+        </div>
+        <button class="btn-primary" onclick="scrollToForm()" style="margin-top:2rem">سجّل اهتمامك الآن →</button>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-img-placeholder">🏙️
+          <div class="about-badge">
+            <strong>+65</strong>
+            <span>عاماً من الخبرة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card"><div class="stat-num">+65</div><div class="stat-label">عاماً من الريادة في السوق المصري</div></div>
+      <div class="stat-card"><div class="stat-num">4M+</div><div class="stat-label">متر مربع مساحات تطوير</div></div>
+      <div class="stat-card"><div class="stat-num">7B+</div><div class="stat-label">جنيه مبيعات موثقة مع الشركاء</div></div>
+      <div class="stat-card"><div class="stat-num">50%</div><div class="stat-label">خصم يصل إليه على جميع الوحدات</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOUNT BANNER -->
+<div class="discount-banner reveal">
+  <div class="container">
+    <div class="discount-num">50%</div>
+    <div class="discount-text">خصم استثنائي على جميع وحدات مدينة مصر</div>
+    <div class="discount-sub">العرض محدود — استغل الفرصة قبل نفاد الوحدات المخصصة للخصم</div>
+    <button class="btn-white" onclick="scrollToForm()">احجز الآن واستفد من الخصم الكامل</button>
+  </div>
+</div>
+
+<!-- VILLA HIGHLIGHT -->
+<section class="villa-section" id="villa">
+  <div class="container">
+    <div class="villa-inner reveal">
+      <div>
+        <div class="villa-tag">🔥 عرض حصري لا يُفوَّت</div>
+        <h2>فيلا فاخرة<br><span>بسعر الشقة!</span></h2>
+        <p>لأول مرة — مدينة مصر تقدم لك فيلا مستقلة بمساحات رحبة وتشطيبات راقية بأسعار تنافسية تعادل سعر شقة عادية في نفس المنطقة. فرصة لن تتكرر.</p>
+        <div class="villa-features">
+          <div class="villa-feat">مساحات تبدأ من 200 متر وتصل لـ 500 متر</div>
+          <div class="villa-feat">حديقة خاصة وجراج مغطى لكل وحدة</div>
+          <div class="villa-feat">تشطيب سوبر لوكس بأعلى المعايير الدولية</div>
+          <div class="villa-feat">نظام دفع مرن حتى 10 سنوات (Touba)</div>
+          <div class="villa-feat">ضمان صيانة شامل 20 سنة (Theqa)</div>
+          <div class="villa-feat">خصم فوري يصل إلى 50% عند الحجز الآن</div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <button class="btn-primary" onclick="scrollToForm()">أنا مهتم — تواصل معي فوراً</button>
+          <a href="https://wa.me/201102190220?text=مرحباً، مهتم بعرض الفيلا بسعر الشقة" target="_blank" style="font-family:var(--sans);background:transparent;color:#25D366;padding:.85rem 2.2rem;border-radius:4px;font-size:1rem;font-weight:600;border:1.5px solid #25D366;cursor:pointer;transition:all .3s;display:inline-block">استفسر واتساب</a>
+        </div>
+      </div>
+      <div class="villa-visual">
+        <div class="price-compare">
+          <div class="price-old">السعر الأصلي: ٦,٠٠٠,٠٠٠ جنيه</div>
+          <div class="price-new">يبدأ من ٣,٠٠٠,٠٠٠ ج</div>
+          <div class="price-label">بعد تطبيق الخصم الاستثنائي يصل إلى 50%</div>
+        </div>
+        <div style="background:rgba(216,30,44,.08);border:1px solid rgba(216,30,44,.25);border-radius:8px;padding:1.5rem;text-align:center">
+          <div style="font-size:3rem;margin-bottom:.5rem">🏡</div>
+          <div style="font-family:var(--sans);font-size:1.1rem;font-weight:700">فيلا مستقلة في كمبوند راقٍ</div>
+          <div style="font-size:.88rem;color:var(--gray-light);margin-top:.3rem;margin-bottom:1rem">خاصة • مستقلة • فاخرة • بضمان 20 سنة</div>
+          <button class="btn-primary" onclick="scrollToForm()" style="width:100%;font-size:.9rem">احجز فيلتك الآن</button>
+        </div>
+        <div style="background:var(--dark4);border:1px solid var(--border2);border-radius:8px;padding:1rem;display:flex;align-items:center;gap:.75rem">
+          <span style="font-size:1.5rem">⏰</span>
+          <div>
+            <div style="font-family:var(--sans);font-size:.85rem;font-weight:700;color:var(--red)">العرض محدود بعدد الوحدات</div>
+            <div style="font-size:.8rem;color:var(--gray-light)">تواصل الآن قبل نفاد الوحدات المخصصة</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">مشروعاتنا</span>
+      <h2 class="section-title">اكتشف <span>عالم مدينة مصر</span></h2>
+      <div class="divider center"></div>
+      <p class="section-sub">مشاريع متكاملة في أرقى مواقع القاهرة — كل مشروع قصة نجاح مختلفة تنتظرك</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-img">
+          <img src="images/moriarty1.jpg" alt="سراي" onerror="this.style.display='none'">
+          🏙️
+          <div class="project-badge">سراي</div>
+        </div>
+        <div class="project-body">
+          <h3>كمبوند سراي — القاهرة الجديدة</h3>
+          <div class="project-location"><span class="loc-icon">📍</span> القاهرة الجديدة</div>
+          <div class="project-tags">
+            <span class="project-tag">شقق</span>
+            <span class="project-tag">فيلات</span>
+            <span class="project-tag">دوبليكس</span>
+            <span class="project-tag">تجاري</span>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-light);margin-bottom:1rem;line-height:1.7">مجتمع متكامل على مساحة شاسعة في قلب القاهرة الجديدة. يضم وحدات سكنية متنوعة، مدارس، مستشفيات، ومراكز تجارية متكاملة.</p>
+          <button class="project-cta" onclick="scrollToForm()">استفسر عن سراي الآن</button>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-img">
+          <img src="images/moriarty2.jpg" alt="تالالا" onerror="this.style.display='none'">
+          🌿
+          <div class="project-badge">تالالا</div>
+        </div>
+        <div class="project-body">
+          <h3>كمبوند تالالا — هليوبوليس</h3>
+          <div class="project-location"><span class="loc-icon">📍</span> هليوبوليس / مصر الجديدة</div>
+          <div class="project-tags">
+            <span class="project-tag">فيلات</span>
+            <span class="project-tag">تاون هاوس</span>
+            <span class="project-tag">شقق</span>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-light);margin-bottom:1rem;line-height:1.7">كمبوند تالا في قلب هليوبوليس — يجمع بين الهدوء والرقي في أعرق أحياء القاهرة مع قرب من كل الخدمات.</p>
+          <button class="project-cta" onclick="scrollToForm()">استفسر عن تالا الآن</button>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-img">
+          <img src="images/moriarty3.jpg" alt="بترفلاي" onerror="this.style.display='none'">
+          🦋
+          <div class="project-badge">بترفلاي</div>
+        </div>
+        <div class="project-body">
+          <h3>مشروع بترفلاي — مدينة نصر</h3>
+          <div class="project-location"><span class="loc-icon">📍</span> مدينة نصر</div>
+          <div class="project-tags">
+            <span class="project-tag">شقق</span>
+            <span class="project-tag">دوبليكس</span>
+            <span class="project-tag">بنتهاوس</span>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-light);margin-bottom:1rem;line-height:1.7">مشروع بترفلاي في قلب مدينة نصر — وحدات سكنية عصرية بتصاميم معمارية فريدة في أحد أكثر أحياء القاهرة حيوية.</p>
+          <button class="project-cta" onclick="scrollToForm()">استفسر عن بترفلاي الآن</button>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-img">
+          <img src="images/moriarty4.webp" alt="تجاري" onerror="this.style.display='none'">
+          🏪
+          <div class="project-badge">تجاري</div>
+        </div>
+        <div class="project-body">
+          <h3>محلات تجارية — مدينة مصر</h3>
+          <div class="project-location"><span class="loc-icon">📍</span> مشاريع متعددة</div>
+          <div class="project-tags">
+            <span class="project-tag">محلات</span>
+            <span class="project-tag">مكاتب</span>
+            <span class="project-tag">استثمار</span>
+          </div>
+          <p style="font-size:.88rem;color:var(--gray-light);margin-bottom:1rem;line-height:1.7">وحدات تجارية بمواقع استراتيجية داخل مجتمعات مدينة مصر المتكاملة — استثمار مضمون وعائد دوري مرتفع.</p>
+          <button class="project-cta" onclick="scrollToForm()">استفسر عن الوحدات التجارية</button>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <button class="btn-primary" onclick="scrollToForm()">اعرف أسعار جميع المشروعات الآن</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">معرض الصور</span>
+      <h2 class="section-title">اكتشف <span>جمال مشروعاتنا</span></h2>
+      <div class="divider center"></div>
+      <p class="section-sub">صور حقيقية من مشاريع مدينة مصر — اضغط على أي صورة للتكبير</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" onclick="openLightbox('images/moriarty3.jpg')">
+        <img src="images/moriarty3.jpg" alt="مشروع 1" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🏙️</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/moriarty2.jpg')">
+        <img src="images/moriarty2.jpg" alt="مشروع 2" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🌿</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/gallery3.jpg')">
+        <img src="images/moriarty1.jpg" alt="مشروع 3" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🦋</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/gallery4.jpg')">
+        <img src="images/moriarty4.webp" alt="مشروع 4" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🏡</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/gallery5.jpg')">
+        <img src="images/gallery5.jpg" alt="مشروع 5" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🌳</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/gallery6.jpg')">
+        <img src="images/gallery6.jpg" alt="مشروع 6" onerror="this.style.display='none'">
+        <div class="gallery-emoji">🏊</div>
+        <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <button class="btn-primary" onclick="scrollToForm()">تواصل معنا لمعرفة المزيد</button>
+    </div>
+  </div>
+</section>
+
+<!-- INNOVATIONS -->
+<section class="innovations" id="innovations">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">الابتكارات</span>
+      <h2 class="section-title">حلول <span>لم تعرفها من قبل</span></h2>
+      <div class="divider center"></div>
+      <p class="section-sub">مدينة مصر تُحدث ثورة حقيقية في سوق العقارات المصري بحلول مبتكرة تُيسّر تملّك الوحدات</p>
+    </div>
+    <div class="innov-grid">
+      <div class="innov-card reveal">
+        <div class="innov-icon">🧱</div>
+        <h3>Touba — ادفع على راحتك</h3>
+        <p>خطة دفع ثورية تُقسّم سعر الوحدة إلى أجزاء صغيرة مثل "الطوب" — ابنِ منزل أحلامك مالياً، قطعة قطعة، حتى 10 سنوات بدون ضغوط.</p>
+      </div>
+      <div class="innov-card reveal reveal-delay-1">
+        <div class="innov-icon">💼</div>
+        <h3>SAFE — استثمار جزئي آمن</h3>
+        <p>امتلك حصة في عقار متميز بمبلغ بسيط وابدأ تحصيل دخل شهري ثابت دون أعباء الإدارة. الاستثمار العقاري أصبح في متناول الجميع.</p>
+      </div>
+      <div class="innov-card reveal reveal-delay-2">
+        <div class="innov-icon">🛡️</div>
+        <h3>Theqa — ضمان الصيانة 20 سنة</h3>
+        <p>للمرة الأولى في مصر — لا مزيد من ودائع الصيانة ولا قلق على الإصلاحات. ضمان شامل لمدة 20 عاماً يحمي استثمارك بالكامل.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <button class="btn-primary" onclick="scrollToForm()">استفسر عن الحلول المبتكرة الآن</button>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN FORM -->
+<section class="form-section" id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">سجّل بياناتك</span>
+      <h2 class="section-title">فريق المبيعات <span>في خدمتك</span></h2>
+      <div class="divider center"></div>
+      <p class="section-sub">سجّل بياناتك الآن وسيتواصل معك أحد ممثلي مدينة مصر خلال دقائق لتقديم أفضل العروض</p>
+    </div>
+    <div class="form-wrapper" style="margin-top:2.5rem">
+      <div class="form-card reveal">
+        <form id="mainForm" onsubmit="handleSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>الاسم الكامل *</label>
+              <input type="text" id="fname" placeholder="اسمك الكامل" required>
+            </div>
+            <div class="form-group">
+              <label>رقم الهاتف *</label>
+              <input type="tel" id="fphone" placeholder="01XXXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label>المشروع المهتم به</label>
+              <select id="fproject">
+                <option value="">اختر المشروع</option>
+                <option value="sarai">كمبوند سراي — القاهرة الجديدة</option>
+                <option value="tala">كمبوند تالالا — هليوبوليس</option>
+                <option value="butterfly">بترفلاي — مدينة نصر</option>
+                <option value="commercial">محلات تجارية — مدينة مصر</option>
+                <option value="any">أي مشروع متاح</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>نوع الوحدة</label>
+              <select id="ftype">
+                <option value="">اختر نوع الوحدة</option>
+                <option value="villa">🏡 فيلا (بسعر شقة!)</option>
+                <option value="apartment">🏢 شقة</option>
+                <option value="duplex">🏠 دوبليكس</option>
+                <option value="commercial">🏪 وحدة تجارية</option>
+              </select>
+            </div>
+            <div class="form-group form-full">
+              <label>الغرض من التواصل</label>
+              <select id="fpurpose">
+                <option value="">اختر الغرض</option>
+                <option value="buy">شراء وحدة</option>
+                <option value="inquiry">استفسار عام</option>
+                <option value="sales">التواصل مع فريق المبيعات للحجز</option>
+                <option value="service">خدمة العملاء</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">🚀 أرسل بياناتي — سيتواصل معك الفريق فوراً</button>
+          <p class="form-note">بياناتك آمنة 100% — لن تُستخدم إلا للتواصل معك فقط من قِبَل فريق مبيعات مدينة مصر</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">آراء العملاء</span>
+      <h2 class="section-title">ماذا يقول <span>عملاؤنا</span></h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"اشتريت شقة في سراي وكانت أفضل قرار في حياتي. المشروع فيه كل حاجة — مدارس، مستشفيات، وتجارة. والأهم إن التسليم كان في الموعد بالظبط."</p>
+        <div class="test-author">
+          <div class="test-avatar">أح</div>
+          <div><div class="test-name">أحمد محمود</div><div class="test-proj">مالك وحدة في كمبوند سراي</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal reveal-delay-1">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"الفيلا في تالا بسعر الشقة ده مكنتش متوقعه! وبعدين ضمان الصيانة 20 سنة ده حاجة مش موجودة في أي شركة تانية. تعامل راقي جداً من فريق المبيعات."</p>
+        <div class="test-author">
+          <div class="test-avatar">سم</div>
+          <div><div class="test-name">سمر العزب</div><div class="test-proj">مالكة فيلا في تالا هليوبوليس</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal reveal-delay-2">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"استثمرت في المحلات التجارية وبدأت أحصل على عائد من أول يوم تسليم. شركة محترمة وعندها رؤية حقيقية للسوق المصري. أنصح الجميع."</p>
+        <div class="test-author">
+          <div class="test-avatar">مك</div>
+          <div><div class="test-name">محمد الكومي</div><div class="test-proj">مستثمر تجاري — مدينة مصر</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <button class="btn-primary" onclick="scrollToForm()">انضم لآلاف العملاء الراضين</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">الأسئلة الشائعة</span>
+      <h2 class="section-title">كل <span>أسئلتك</span> لدينا إجابة</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">هل عرض الخصم 50% حقيقي وعلى أي وحدات ينطبق؟ <span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">نعم، الخصم حقيقي ويصل إلى 50% على وحدات مختارة في مشاريع سراي وتالا وبترفلاي. العرض محدود بعدد معين من الوحدات. تواصل مع فريق المبيعات لمعرفة الوحدات المتاحة بالخصم حالياً.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">إيه هو نظام Touba وإزاي بيساعدني في الشراء؟ <span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Touba هو نظام دفع ابتكرته مدينة مصر يُقسّم سعر الوحدة إلى دفعات صغيرة مرنة تمتد حتى 10 سنوات. بدلاً من القسط الكبير، تدفع مبالغ صغيرة بشكل منتظم حتى تمتلك وحدتك بالكامل.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">هل الفيلا بسعر الشقة ده فعلاً حقيقي؟ <span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">نعم تماماً. بفضل الخصومات الاستثنائية ونظام Touba، أصبحت قيمة القسط الشهري للفيلا قريبة جداً من قيمة القسط الشهري للشقة في نفس المنطقة. هذا يجعل امتلاك فيلا مستقلة حلماً حقيقياً.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ما هي ضمانات الجودة والتسليم؟ <span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">مدينة مصر شركة مدرجة في البورصة المصرية ومعروفة بالتزامها بمواعيد التسليم. بالإضافة لذلك، نظام Theqa يضمن صيانة الوحدة لمدة 20 عاماً دون أي ودائع إضافية.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">كيف أحجز وحدة أو أستفسر عن الأسعار؟ <span class="faq-arrow">▼</span></div>
+        <div class="faq-a"><div class="faq-a-inner">سجّل بياناتك في النموذج وسيتواصل معك أحد ممثلي مدينة مصر خلال دقائق. يمكنك أيضاً الاتصال على 01102190220 أو التواصل عبر واتساب للحصول على أسعار فورية.</div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <button class="btn-primary" onclick="scrollToForm()">لديك سؤال آخر؟ تواصل معنا</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip">
+  <div class="contact-strip-inner">
+    <div class="contact-item">
+      <span class="contact-icon" style="color:var(--red)">📞</span>
+      <div><span>اتصل بنا مباشرة</span><strong>01102190220</strong></div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon" style="color:#25D366">💬</span>
+      <div><span>واتساب فوري</span><strong>01102190220</strong></div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">📍</span>
+      <div><span>المقر الرئيسي</span><strong>القاهرة، مصر</strong></div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">🌐</span>
+      <div><span>الموقع الرسمي</span><strong><a href="https://madinetmasr.com" target="_blank" style="color:var(--red)">madinetmasr.com</a></strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.webp" alt="مدينة مصر" onerror="this.style.display='none';document.querySelectorAll('.footer-brand-name').forEach(e=>e.style.display='block')">
+        <div class="footer-brand-name">مدينة <span>مصر</span></div>
+        <p>مدينة مصر للإسكان والتعمير — شركة عقارية رائدة منذ 1959. نبني مجتمعات متكاملة وحياة أفضل لكل المصريين.</p>
+        <div style="margin-top:1.2rem">
+          <a href="tel:01102190220" style="color:var(--red);font-family:var(--sans);font-weight:700;font-size:1rem">📞 01102190220</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>المشروعات</h4>
+        <ul>
+          <li><a href="#projects">سراي — القاهرة الجديدة</a></li>
+          <li><a href="#projects">تالالا — هليوبوليس</a></li>
+          <li><a href="#projects">بترفلاي — مدينة نصر</a></li>
+          <li><a href="#projects">محلات تجارية</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>روابط مفيدة</h4>
+        <ul>
+          <li><a href="#about">عن الشركة</a></li>
+          <li><a href="#villa">عرض الفيلا</a></li>
+          <li><a href="#innovations">الابتكارات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          <li><a href="https://madinetmasr.com" target="_blank">الموقع الرسمي</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 مدينة مصر للإسكان والتعمير. جميع الحقوق محفوظة.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/MadinetMasrOfficialPage" target="_blank" class="social-link">ف</a>
+        <a href="https://www.instagram.com/madinetmasr" target="_blank" class="social-link">ان</a>
+        <a href="https://www.youtube.com/@madinetmasr" target="_blank" class="social-link">يو</a>
+        <a href="https://wa.me/201102190220" target="_blank" class="social-link" style="color:#25D366">و</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- THANK YOU PAGE -->
+<div id="thankyou-page">
+  <div class="ty-check">✓</div>
+  <div class="ty-stars">★★★★★</div>
+  <h2 class="ty-title">شكراً لك! <span>تم استلام بياناتك</span></h2>
+  <p class="ty-text">سيتواصل معك أحد ممثلي فريق مبيعات مدينة مصر في أقرب وقت ممكن للإجابة على استفساراتك وتقديم أفضل العروض المتاحة حصرياً لك.</p>
+  <div class="ty-btns">
+    <a href="https://wa.me/201102190220?text=مرحباً، قمت بتسجيل بياناتي وأرغب في الاستفسار عن وحدات مدينة مصر" target="_blank" class="ty-wa">💬 تواصل معنا عبر واتساب الآن</a>
+    <button class="ty-back" onclick="hideThankyou()">العودة للصفحة الرئيسية</button>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lb-close" onclick="closeLightbox()">✕</button>
+  <img id="lb-img" src="" alt="صورة المشروع">
+</div>
+
+<script>
+// NAV + STICKY
+window.addEventListener('scroll',function(){
+  const nav=document.getElementById('mainNav');
+  const cta=document.getElementById('stickyCta');
+  if(window.scrollY>80)nav.classList.add('scrolled');else nav.classList.remove('scrolled');
+  if(window.scrollY>500)cta.classList.add('visible');else cta.classList.remove('visible');
+});
+
+// VIDEO
+const vid=document.getElementById('heroVideo');
+if(vid){
+  vid.play().catch(()=>{});
+}
+function toggleSound(){
+  if(!vid)return;
+  vid.muted=!vid.muted;
+  document.getElementById('soundBtn').textContent=vid.muted?'🔇 اضغط لتشغيل الصوت':'🔊 إيقاف الصوت';
+}
+
+// SCROLL TO FORM
+function scrollToForm(){
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+}
+
+// FORM SUBMIT
+function handleSubmit(e){
+  e.preventDefault();
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  if(!name||!phone){alert('من فضلك أدخل الاسم ورقم الهاتف');return;}
+  document.getElementById('thankyou-page').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function hideThankyou(){
+  document.getElementById('thankyou-page').classList.remove('active');
+  document.body.style.overflow='';
+  document.getElementById('mainForm').reset();
+}
+
+// FAQ
+function toggleFaq(el){
+  const item=el.parentElement;
+  document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('open')});
+  item.classList.toggle('open');
+}
+
+// LIGHTBOX
+function openLightbox(src){
+  const img=document.getElementById('lb-img');
+  img.src=src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow='';
+}
+
+// REVEAL
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
