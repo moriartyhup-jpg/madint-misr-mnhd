@@ -907,5 +907,45 @@ const obs=new IntersectionObserver((entries)=>{
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
+
+  <script>
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    // رابط الـ Script الخاص بك
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvddlkcmmd8Z6R9_zbUu3ES8JsJpZZVu9iUxwXV_DdkhPMlQgfOsqx9f0bpzdnOTSSaA/exec';
+    const submitButton = document.querySelector('.form-submit');
+    
+    // تغيير شكل الزرار أثناء الإرسال
+    submitButton.disabled = true;
+    submitButton.innerHTML = "جاري الإرسال...";
+
+    const formData = {
+      name: document.getElementById('fname').value,
+      phone: document.getElementById('fphone').value,
+      project: document.getElementById('fproject').options[document.getElementById('fproject').selectedIndex].text,
+      unit_type: document.getElementById('ftype').options[document.getElementById('ftype').selectedIndex].text,
+      purpose: document.getElementById('fpurpose').options[document.getElementById('fpurpose').selectedIndex].text
+    };
+
+    fetch(scriptURL, {
+      method: 'POST',
+      mode: 'no-cors', // لتجنب مشاكل الـ CORS مع جوجل
+      cache: 'no-cache',
+      body: JSON.stringify(formData)
+    })
+    .then(() => {
+      alert('تم استلام بياناتك بنجاح! سيتواصل معك فريق مبيعات مدينة مصر فوراً.');
+      document.getElementById('mainForm').reset();
+      submitButton.disabled = false;
+      submitButton.innerHTML = "🚀 أرسل بياناتي — سيتواصل معك الفريق فوراً";
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      alert('حدث خطأ، حاول مرة أخرى');
+      submitButton.disabled = false;
+    });
+  }
+</script>
 </body>
 </html>
